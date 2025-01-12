@@ -1,0 +1,57 @@
+body {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    margin-bottom: 15px;
+    text-align: left;
+    line-height: 1.5;
+}
+
+hr {
+    color: #D3D3D3;
+    display: flex;
+    justify-self: center;
+    border: 0.5px solid;
+    width: 100%;
+    border-radius: 5px;
+}
+
+h1, h2 {
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 2px;
+    line-height: 1.5;
+    font-weight: normal;
+}
+
+h1 {
+    margin-bottom: 5px;
+}
+
+h2 {
+    color: #006EB6;
+    font-size: 18px;
+    margin-top: 0px;
+    margin-bottom: -10px;
+}
+
+footer {
+    text-align: center;
+}
+
+#content {
+    max-width: 600px;
+    margin: 30px;
+    padding: 50px;
+    border: 1px solid #D3D3D3;  
+    
+}
+
+.does-list li {
+    margin-bottom: 10px;
+}
+
+.logo {
+    width: 150px;
+    margin: 20px;
+    display: inline-block;
+}
