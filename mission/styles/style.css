@@ -56,3 +56,27 @@ footer {
     display: inline-block;
 }
 
+.logo-dark {
+    display: none;
+}
+
+
+/* Dark Theme */
+.dark {
+    background-color: #333;
+    color: white;
+}
+
+.dark h2 {
+    color: #A7D3F1; 
+}
+
+.dark .logo {
+    display: none;
+}
+
+.dark .logo-dark {
+    display: inline-block;
+    width: 150px;
+    margin: 20px;
+}
