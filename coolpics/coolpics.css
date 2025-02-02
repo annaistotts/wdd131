@@ -104,9 +104,45 @@ footer {
     
 }
 
+.hide {
+    display: none;
+}
+
+.viewer {
+    position: fixed;  
+    top: 0;  
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: grid; 
+    justify-items: center; 
+    align-items: center; 
+    background-color: rgba(0, 0, 0, 0.75); 
+    z-index: 10;
+}
+
+.close-viewer {
+    position: absolute;    
+    top: 20px;             
+    left: 20px;           
+    background: none;       
+    color: white;           
+    font-size: 2rem;         
+    border: none;           
+}
+
+.viewer img {     
+    max-height: 100%;       
+    object-fit: contain;     
+}
+
 @media screen and (max-width: 999px) {
     nav {
         display: none;
+    }
+
+    nav.show {
+        display: block;
     }
 }
 
@@ -114,6 +150,11 @@ footer {
     .gallery {
       display: grid;
       grid-template-columns: 1fr 1fr; 
+    }
+
+    .viewer img {
+        max-width: 80%; 
+        max-height: 80%;
     }
 }
   
