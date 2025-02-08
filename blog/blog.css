@@ -128,4 +128,18 @@ nav ul li a {
     border-radius: 5px;
 }
   
-  
+.skiptocontent a {
+    position: absolute;
+    top: -40px; 
+    left: 0; 
+    background-color: #ff0; 
+    color: black; 
+    padding: 10px; 
+    text-decoration: none; 
+    z-index: 1000; 
+}
+
+
+.skiptocontent a:focus {
+    top: 0; 
+} 
