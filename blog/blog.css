@@ -1,0 +1,131 @@
+:root {
+    --primary-color: #668586;   /* Main color */
+    --secondary-color: #7b435b; /* Accent color */
+    --accent-color: #d9b26f;    /* Highlight color */
+    --primary-font: "Roboto Flex", Arial, Helvetica, sans-serif;
+    --secondary-font: "Lora", Arial Helvetica, sans-serif;
+}
+
+body {
+    font-family: var(--primary-font);
+    font-size: 1.2em;
+    margin: 0;
+    padding: 0;
+    background-color: white;
+}
+
+h1, h3 {
+    font-family: var(--secondary-font)
+}
+
+h1 {
+    font-size: 2.3em;
+    color: var(--secondary-color);
+}
+
+h3 {
+    font-size: 1.5em;
+    color: var(--primary-color);
+}
+
+a:link, a:visited {
+    color: var(--accent-color);
+    text-decoration: none;
+}
+
+a:hover, a:active {
+    color: var(--secondary-color);
+}
+
+header {
+    padding: 10px 0;
+    text-align: center;
+}
+
+header nav ul {
+    list-style-type: none;
+    margin: 0 auto;
+    padding: 20px;
+    display: grid; 
+    grid-template-columns: 150px 150px 150px;
+    justify-content: end; 
+    border: 2px solid var(--primary-color);
+}
+
+header nav ul li {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+header nav ul a {
+    font-size: 1.3em;
+    text-transform: uppercase;
+}
+
+.left-info {
+    color: var(--secondary-color);
+}
+
+nav ul {
+    display: grid;
+    grid-template-columns: 150px 150px 150px;
+    justify-content: end;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+  
+nav ul li {
+    text-align: center;
+}
+  
+nav ul li a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: black;
+}
+
+.book {
+    display: grid;
+    grid-template-columns: 150px 1fr; 
+    gap: 20px; 
+    margin-bottom: 20px;
+}
+  
+.book .left-info p {
+    margin-top: 35px;
+    margin-bottom: -30px;
+    margin-left: 10px;
+}
+  
+.book .middle-info, .book .right-info {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+  
+.book img {
+    max-width: 150px;
+    height: auto;
+}
+  
+.home-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr; 
+    gap: 20px;
+}
+  
+.js-info {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+  
+.filter {
+    background: #f0f0f0;
+    padding: 15px;
+    border-radius: 5px;
+}
+  
+  
