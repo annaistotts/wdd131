@@ -1,0 +1,155 @@
+@import url("https://fonts.googleapis.com/css2?family=Caveat:wght@400;600&display=swap");
+
+:root {
+    --primary-color: #1B98E0;
+    --secondary-color: #59c3c3;
+    --text-dark: #333;
+    --text-light: #ebebeb;
+    --primary-font: Arial, Helvetica, sans-serif;
+    --secondary-font: "Caveat", cursive;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--primary-font);
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+body {
+    color: var(--text-dark);
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+
+header img {
+    width: 50px;
+    height: auto;
+    margin-right: 10px;
+}
+
+header h1 {
+    font-size: 3em;
+    font-family: var(--secondary-font);
+    color: var(--primary-color);
+}
+
+.search {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.search input {
+    flex: 1;
+    padding: 8px;
+    font-size: 1em;
+    border: 1px solid;
+    border-radius: 5px;
+    outline: none;
+}
+
+.search button {
+    border: none;
+    padding: 8px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-left: 5px;
+}
+
+.search button img {
+    width: 20px;
+    height: 20px;
+}
+
+.recipe {
+    margin: 15px;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border: 1px solid;
+}
+
+.recipe img {
+    border-radius: 10px;
+}
+
+.recipe .tags {
+    display: flex;
+    gap: 10px;
+    margin: 10px 0;
+}
+
+.recipe .tag {
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 0.9em;
+    border: 1px solid;
+}
+
+.recipe h2 {
+    font-size: 2em;
+    font-family: var(--secondary-font);
+    margin-bottom: 5px;
+    color: var(--primary-color);
+}
+
+.rating {
+    font-size: 1.2em;
+}
+
+.recipe p {
+    display: none;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    font-size: 0.8em;
+}
+
+footer .social {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+footer .social img {
+    width: 25px;
+    height: auto;
+}
+
+footer a {
+    text-decoration: none;
+    font-size: 0.6em;
+}
+
+@media (min-width: 600px) {
+    .recipe {
+        display: flex;
+        flex-direction: row; 
+        gap: 20px;
+    }
+    
+    .recipe img {
+        width: 50%;
+    }
+    
+
+}
+
+@media (min-width: 960px) {
+   
+}
