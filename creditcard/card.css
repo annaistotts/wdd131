@@ -1,0 +1,105 @@
+
+.card.front {
+    width: 400px; 
+    height: 200px; 
+    background-color: #d0d0d0; 
+    border-radius: 10px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+    overflow: hidden; 
+    position: relative; 
+    display: grid;
+    grid-template-columns: 1fr 100px; 
+    grid-template-rows: 1fr 1fr 1fr; 
+    padding: 30px; 
+    gap: 15px; 
+}
+  
+.total {
+    grid-column: 1;
+    grid-row: 1;
+}
+  
+.total h3 {
+    font-size: 18px;
+    margin: 0;
+}
+  
+.card-image {
+    grid-column: 2;
+    grid-row: 1;
+    text-align: right;
+}
+
+.card-number {
+    grid-column: 1, 2;
+    grid-row: 2;
+    
+}
+
+.card-holder {
+    grid-column: 1;
+    grid-row: 3; 
+}
+
+.expiration {
+    grid-column: 2;
+    grid-row: 3;
+    text-align: right;
+}
+  
+.card-number label,
+.card-holder label,
+.expiration label {
+    font-size: 15px;
+    text-transform: uppercase;
+}
+  
+.card-number input,
+.card-holder input,
+.expiration input {
+    width: 100%;
+    padding: 8px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+  
+.expiration-fields {
+    display: flex;
+    gap: 10px;
+}
+  
+.expiration input {
+    width: 45%; 
+}
+
+.card.back {
+    width: 400px; 
+    height: 200px; 
+    background-color: #d0d0d0; 
+    border-radius: 10px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+    overflow: hidden; 
+    position: relative; 
+    display: grid;
+    grid-template-columns: 1fr 100px; 
+    grid-template-rows: auto, auto, auto;  
+    gap: 15px; 
+    padding: 30px;
+}
+
+.bar {
+    background-color: #444444;
+    height: 50px;
+    width: 100%;
+    margin: 0;
+    grid-column: 1 / -1;
+}
+
+.cvc input {
+    width: 100%;
+    padding: 8px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
