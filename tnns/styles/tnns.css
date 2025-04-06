@@ -1,0 +1,258 @@
+@import url('https://fonts.googleapis.com/css2?family=Chivo:wght@300;400;700&display=swap');
+
+:root {
+  --primary-color: white;
+  --secondary-color: #6CB680;
+  --accent1-color: #497B57;
+  --accent2-color: #2D2D2A;
+
+  --heading-font: "Chivo", sans-serif;
+  --paragraph-font: "Chivo", Helvetica, sans-serif;
+
+  --nav-link-color: var(--primary-color);
+  --nav-background-color: var(--secondary-color);
+  --nav-hover-link-color: white;
+  --nav-hover-background-color: var(--accent1-color);
+}
+
+body {
+  font-family: var(--paragraph-font);
+  background-color: var(--primary-color);
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: var(--nav-background-color);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1em 2em;
+}
+
+.logo {
+  height: 50px; 
+  padding: 8px; 
+  background-color: white; 
+  border-radius: 50%; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+}
+
+nav a {
+  color: var(--nav-link-color);
+  text-decoration: none;
+  margin: 0 1em;
+  font-weight: bold;
+  font-size: 1.2em;
+}
+
+nav a:hover {
+  background-color: var(--nav-hover-background-color);
+  padding: 1em;
+  border-radius: 5px;
+  color: var(--nav-hover-link-color);
+}
+
+.hero img {
+  width: 100%;
+  height: auto;
+  display: block;
+  filter: grayscale(100%);
+}
+
+.intro {
+  background-color: var(--accent1-color);
+  color: var(--primary-color);
+  padding: 2em;
+  text-align: center;
+  position: relative;
+  top: -100px;
+  margin: 0 auto;
+  max-width: 800px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.30);
+  z-index: 2;
+  border-radius: 10px;
+  border: 1px solid var(--accent1-color);
+}
+
+.features {
+  display: flex;
+  justify-content: space-around;
+  padding: 2em;
+  background-color: var(--primary-color);
+}
+
+.feature {
+  text-align: center;
+  width: 30%;
+}
+
+.feature img {
+  width: 100%;
+  border-radius: 50%;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+  border: 4px solid var(--accent1-color);
+}
+
+.feature h3 {
+  color: var(--accent2-color);
+  margin-top: 1em;
+}
+
+footer {
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+  text-align: right;
+  padding: 1em;
+  font-size: 0.9em;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 10;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+  
+.modal-content {
+    background-color: white;
+    margin: 10% auto;
+    padding: 2em;
+    border-radius: 10px;
+    width: 80%;
+    max-width: 500px;
+    position: relative;
+}
+  
+.close {
+    color: #aaa;
+    position: absolute;
+    right: 1em;
+    top: 0.5em;
+    font-size: 1.5em;
+    cursor: pointer;
+}
+  
+h2 {
+    font-weight: 700;
+    text-transform: uppercase;
+}
+  
+h3 {
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.bubbles {
+    display: flex;
+    justify-content: center;
+    gap: 2em;
+    padding: 3em 1em;
+    background-color: var(--primary-color);
+    flex-wrap: wrap; 
+    margin-top: -60px;
+}
+  
+.bubble {
+    text-align: center;
+    width: 400px;
+}
+  
+.bubble img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 50%; 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.50); 
+    transition: transform 0.3s ease;
+}
+  
+.bubble img:hover {
+    transform: scale(1.05); 
+}
+  
+.bubble h3 {
+    margin-top: 1em;
+    color: var(--accent2-color);
+}
+
+/* Registration Form */
+
+.registration-container {
+    padding: 20px;
+    max-width: 960px;
+    margin: 2em auto;
+}
+
+.registration-container h1 {
+    text-transform: uppercase;
+    color: var(--accent1-color);
+}
+
+form {
+    padding: 20px;
+    border-radius: 6px;
+    background: white;
+    box-shadow: 0 0 8px var(--accent2-color);
+}
+  
+.item {
+    margin: 10px 0;
+}
+  
+input, select, textarea {
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 10px;
+    border-radius: 3px;
+    border: 1px solid var(--accent1-color);
+}
+  
+button {
+    width: 150px;
+    padding: 10px;
+    background: var(--accent1-color);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+  
+button:hover {
+    background: var(--accent2-color);
+}
+  
+.participants {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+  
+#add {
+    grid-column: span 2;
+}
+
+
+/* Media */
+@media (max-width: 768px) {
+    .bubbles {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .participants {
+      grid-template-columns: 1fr;
+    }
+  
+    .bubble {
+      width: 100%;
+    }
+}
+
+  

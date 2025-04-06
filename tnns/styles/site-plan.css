@@ -27,7 +27,7 @@ em {
 
 :root {
   /* change the values below to your colors from your palette */
-  --primary-color: #FFF9F5;
+  --primary-color: white;
   --secondary-color: #6CB680;
   --accent1-color: #497B57;
   --accent2-color: #2D2D2A;

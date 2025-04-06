@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Tennis Connect | Registration</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Register for Tennis Connect Events" />
+  <meta name="author" content="Anna Inskeep" />
+
+  <link rel="stylesheet" href="styles/tnns.css" />
+  <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
+</head>
+<body>
+  <header>
+    <a id="logo_link" href="index.html">
+      <img class="logo" src="images/logo-icon.png" alt="Tennis Connect Logo" />
+    </a>
+    <nav>
+      <a href="index.html">HOME</a>
+      <a href="register.html">REGISTER</a>
+    </nav>
+  </header>
+
+  <main>
+    <div class="registration-container">
+      <h1>Register for Tennis Events</h1>
+      <form>
+        <fieldset class="participants">
+          <legend>Participant Information</legend>
+          <section class="participant1">
+            <p>Participant 1</p>
+            <div class="item">
+              <label for="fname">First Name<span>*</span></label>
+              <input id="fname" type="text" name="fname" required />
+            </div>
+            <div class="item activities">
+              <label for="activity">Event<span>*</span></label>
+              <input id="activity" type="text" name="activity" />
+            </div>
+            <div class="item">
+              <label for="fee">Fee ($)<span>*</span></label>
+              <input id="fee" type="number" name="fee" />
+            </div>
+            <div class="item">
+              <label for="date">Desired Date <span>*</span></label>
+              <input id="date" type="date" name="date" />
+            </div>
+            <div class="item">
+              <p>Skill Level</p>
+              <select>
+                <option value="" disabled selected></option>
+                <option value="Beginner">Beginner</option>
+                <option value="Intermediate">Intermediate</option>
+                <option value="Advanced">Advanced</option>
+              </select>
+            </div>
+          </section>
+          <button type="button" id="add">Add Participant</button>
+        </fieldset>
+
+        <fieldset>
+          <legend>Primary Contact</legend>
+          <div class="columns">
+            <div class="item">
+              <label for="adult_name">Name<span>*</span></label>
+              <input id="adult_name" type="text" name="adult_name" />
+            </div>
+
+            <div class="item">
+              <label for="address1">Address<span>*</span></label>
+              <input id="address1" type="text" name="address1" />
+            </div>
+
+            <div class="item">
+              <label for="city">City<span>*</span></label>
+              <input id="city" type="text" name="city" />
+            </div>
+
+            <div class="item">
+              <label for="state">State<span>*</span></label>
+              <input id="state" type="text" name="state" />
+            </div>
+
+            <div class="item">
+              <label for="eaddress">Email<span>*</span></label>
+              <input id="eaddress" type="email" name="eaddress" />
+            </div>
+
+            <div class="item">
+              <label for="phone">Phone<span>*</span></label>
+              <input id="phone" type="tel" name="phone" />
+            </div>
+
+            <div class="item">
+              <label for="zip">Zip<span>*</span></label>
+              <input id="zip" type="text" name="zip" />
+            </div>
+
+            <div class="question">
+              <label>Relationship to Participants:</label>
+              <div class="question-answer">
+                <div>
+                  <input type="radio" value="self" id="radio_3" name="relationship" />
+                  <label for="radio_3" class="radio"><span>Self</span></label>
+                </div>
+                <div>
+                  <input type="radio" value="parent" id="radio_4" name="relationship" />
+                  <label for="radio_4" class="radio"><span>Parent</span></label>
+                </div>
+                <div>
+                  <input type="radio" value="guardian" id="radio_5" name="relationship" />
+                  <label for="radio_5" class="radio"><span>Guardian</span></label>
+                </div>
+                <div>
+                  <input type="radio" value="other" id="radio_6" name="relationship" />
+                  <label for="radio_6" class="radio"><span>Other</span></label>
+                  <input type="text" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </fieldset>
+
+        <div class="btn-block">
+          <button type="submit" id="submitButton">Submit</button>
+        </div>
+      </form>
+
+      <section id="summary"></section>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Tennis Connect | Anna Inskeep</p>
+  </footer>
+
+  <script src="tnns.js" type="module"></script>
+</body>
+</html>

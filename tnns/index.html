@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Get connected through tennis today!" />
+  <meta name="author" content="Anna Inskeep" />
+  <title>Tennis Connect</title>
+
+  <meta property="og:title" content="Tennis Connect" />
+  <meta property="og:type" content="website" />
+  <meta property="og:description" content="Get connected through tennis today!" />
+  <meta property="og:url" content="https://annaistotts.github.io/wdd131/tnns/index.html" />
+
+  <link rel="stylesheet" href="styles/tnns.css" />
+  <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
+
+</head>
+<body>
+  <header>
+    <a id="logo_link" href="index.html">
+        <img class="logo" src="images/logo-icon.png" alt="Tennis Connect Logo" />
+    </a>
+        
+    <nav>
+      <a href="index.html">HOME</a>
+      <a href="register.html">REGISTER</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <img src="images/hero.jpg" alt="Clay Tennis Court" />
+    </section>
+
+    <section class="intro">
+      <h2>Welcome to Tennis Connect</h2>
+      <p>
+        Whether you're a seasoned pro or just picking up a racket, we’re here to bring tennis lovers together. Our goal is to create
+        a community where players of all levels can connect, learn, and grow the game. Looking to practice with a group, find a local 
+        tournament, or get started on your tennis journey? Tennis Connect has everything you need. Let’s hit the courts, share the 
+        passion, and enjoy the game together!
+      </p>
+    </section>
+
+    <section class="bubbles">
+        <div class="bubble" data-id="tournaments">
+          <img src="images/tournament.jpg" alt="Tournament">
+          <h3>Tournaments</h3>
+        </div>
+        <div class="bubble" data-id="lessons">
+          <img src="images/Lessons.JPG" alt="Lessons">
+          <h3>Lessons</h3>
+        </div>
+        <div class="bubble" data-id="practice">
+          <img src="images/team.jpg" alt="Practice">
+          <h3>Practice</h3>
+        </div>
+    </section>
+      
+    <section class="info">
+      <div id="infoModal" class="modal">
+        <div class="modal-content">
+          <span id="closeModal" class="close">&times;</span>
+          <h2></h2>
+          <p></p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Tennis Connect | Anna Inskeep</p>
+  </footer>
+
+  <script src="tnns.js" type="module"></script>
+</body>
+</html>
